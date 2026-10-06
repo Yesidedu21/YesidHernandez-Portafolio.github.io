@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yesid Hernández | Full Stack Java Developer</title>
+    <meta
+      name="description"
+      content="Portafolio de Yesid Hernández, Full Stack Java Developer e Ingeniero de Sistemas."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Iconos de tecnologías (Devicon) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#inicio" class="logo">Yesid Hernandez<span></span></a>
+      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">
+        ☰
+      </button>
+      <nav class="nav" aria-label="Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#skills">Skills</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="inicio" class="hero container">
+        <div class="hero-text">
+          <p class="hello">Hola, soy</p>
+          <h1>Yesid Hernández</h1>
+          <p class="role">Full Stack Java Developer</p>
+          <p class="lead">
+            Ingeniero de Sistemas. Construyo aplicaciones web de punta a punta:
+            APIs con Spring Boot, bases de datos y interfaces claras. Código
+            limpio, poco y legible.
+          </p>
+          <div class="actions">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-ghost">Contactarme</a>
+          </div>
+          <ul class="hero-icons" aria-label="Tecnologías principales">
+            <li><i class="devicon-java-plain colored"></i></li>
+            <li><i class="devicon-spring-original colored"></i></li>
+            <li><i class="devicon-mysql-original colored"></i></li>
+            <li><i class="devicon-git-plain colored"></i></li>
+            <li><i class="devicon-docker-plain colored"></i></li>
+          </ul>
+        </div>
+
+        <div class="code-card" aria-hidden="true">
+          <div class="code-bar">
+            <span></span><span></span><span></span
+            ><em>ProyectoController.java</em>
+          </div>
+          <pre><code><span class="c">// claro, corto, intencional</span>
+<span class="k">@GetMapping</span>(<span class="s">"/proyectos"</span>)
+<span class="k">public</span> List&lt;Proyecto&gt; <span class="f">listar</span>() {
+  <span class="k">return</span> servicio.<span class="f">todos</span>();
+}</code></pre>
+        </div>
+      </section>
+
+      <!-- SOBRE MÍ -->
+      <section id="sobre-mi" class="section container">
+        <h2>Sobre mí</h2>
+        <div class="about">
+          <div class="about-text">
+            <p>
+              Soy Ingeniero de Sistemas y desarrollador Full Stack especializado
+              en el ecosistema Java. Me enfoco en la precisión, la arquitectura
+              ordenada y la evolución constante de lo que construyo.
+            </p>
+            <p>
+              Escribe aquí tu historia: dónde trabajaste, qué te motiva y qué
+              tipo de proyectos buscas.
+            </p>
+          </div>
+          <ul class="stats">
+            <li><strong>00+</strong><span>Años de experiencia</span></li>
+            <li><strong>00+</strong><span>Proyectos completados</span></li>
+            <li><strong>00+</strong><span>Tecnologías</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section container">
+        <h2>Skills</h2>
+        <p class="section-sub">
+          El stack con el que trabajo de principio a fin.
+        </p>
+
+        <div class="skills-grid">
+          <article class="skill-group">
+            <h3>Backend</h3>
+            <ul class="icons">
+              <li>
+                <i class="devicon-java-plain colored"></i><span>Java</span>
+              </li>
+              <li>
+                <i class="devicon-spring-original colored"></i
+                ><span>Spring Boot</span>
+              </li>
+              <li>
+                <i class="devicon-postman-plain colored"></i
+                ><span>REST / Postman</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>Frontend</h3>
+            <ul class="icons">
+              <li>
+                <i class="devicon-html5-plain colored"></i><span>HTML5</span>
+              </li>
+              <li>
+                <i class="devicon-css3-plain colored"></i><span>CSS3</span>
+              </li>
+              <li>
+                <i class="devicon-javascript-plain colored"></i
+                ><span>JavaScript</span>
+              </li>
+              <li>
+                <i class="devicon-typescript-plain colored"></i
+                ><span>TypeScript</span>
+              </li>
+              <li>
+                <i class="devicon-react-original colored"></i><span>React</span>
+              </li>
+              <li>
+                <i class="devicon-bootstrap-plain colored"></i
+                ><span>Bootstrap</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>Bases de datos</h3>
+            <ul class="icons">
+              <li>
+                <i class="devicon-mysql-original colored"></i><span>MySQL</span>
+              </li>
+              <li>
+                <i class="devicon-postgresql-plain colored"></i
+                ><span>PostgreSQL</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>DevOps y herramientas</h3>
+            <ul class="icons">
+              <li><i class="devicon-git-plain colored"></i><span>Git</span></li>
+              <li>
+                <i class="devicon-github-original"></i><span>GitHub</span>
+              </li>
+              <li>
+                <i class="devicon-docker-plain colored"></i><span>Docker</span>
+              </li>
+              <li>
+                <i class="devicon-kubernetes-plain colored"></i
+                ><span>Kubernetes</span>
+              </li>
+              <li>
+                <i class="devicon-vscode-plain colored"></i><span>VS Code</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section id="proyectos" class="section container">
+        <h2>Proyectos</h2>
+        <p class="section-sub">
+          Reemplaza estos ejemplos con tus proyectos reales.
+        </p>
+
+        <div class="projects">
+          <article class="project">
+            <h3>API REST de Libros</h3>
+            <p>
+              API reactiva con Spring WebFlux y MongoDB. CRUD completo y pensada
+              para escalar.
+            </p>
+            <ul class="tags">
+              <li>Java</li>
+              <li>Spring WebFlux</li>
+              <li>MongoDB</li>
+            </ul>
+            <div class="links"><a href="#">Código</a><a href="#">Demo</a></div>
+          </article>
+          <article class="project">
+            <h3>Sistema de gestión</h3>
+            <p>
+              Aplicación web con autenticación, roles y panel administrativo.
+            </p>
+            <ul class="tags">
+              <li>Spring Boot</li>
+              <li>MySQL</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="links"><a href="#">Código</a><a href="#">Demo</a></div>
+          </article>
+          <article class="project">
+            <h3>Proyecto en contenedores</h3>
+            <p>
+              Despliegue de una app full stack con Docker y pipeline de
+              integración continua.
+            </p>
+            <ul class="tags">
+              <li>Docker</li>
+              <li>Jenkins</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <div class="links"><a href="#">Código</a><a href="#">Demo</a></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="section container">
+        <h2>Contacto</h2>
+        <p class="section-sub">
+          ¿Tienes un proyecto o una oportunidad? Escríbeme.
+        </p>
+
+        <div class="contact">
+          <ul class="contact-info">
+            <li>
+              Correo:
+              <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a>
+            </li>
+            <li>
+              GitHub:
+              <a href="https://github.com/" target="_blank" rel="noopener"
+                >github.com/tu-usuario</a
+              >
+            </li>
+            <li>
+              LinkedIn:
+              <a href="https://linkedin.com/" target="_blank" rel="noopener"
+                >linkedin.com/in/tu-usuario</a
+              >
+            </li>
+          </ul>
+
+          <form class="form" id="form-contacto">
+            <label>Nombre <input type="text" name="nombre" required /></label>
+            <label>Correo <input type="email" name="correo" required /></label>
+            <label
+              >Mensaje <textarea name="mensaje" rows="4" required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">
+              Enviar mensaje
+            </button>
+            <p class="form-msg" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Yesid Hernández · Full Stack Java Developer
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
