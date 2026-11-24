@@ -44,7 +44,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const datos = new FormData(form);
   const asunto = encodeURIComponent(`Contacto desde tu portafolio - ${datos.get("nombre")}`);
-  const cuerpo = encodeURIComponent(`${datos.get("mensaje")}\n\nCorreo: ${datos.get("correo")}`);
+  const cuerpo = encodeURIComponent(`${datos.get("mensaje")}\n\nCorreo: ${datos.get("correo")}\nTeléfono: ${datos.get("telefono") || "No indicado"}`);
   window.location.href = `mailto:yesidh464@gmail.com?subject=${asunto}&body=${cuerpo}`;
   mensaje.textContent = "Se abrió tu cliente de correo para enviar el mensaje.";
   form.reset();

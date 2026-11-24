@@ -173,3 +173,15 @@ h2::after { content: ""; display: block; width: 48px; height: 3px; margin-top: .
 .soon { color: var(--muted); font-weight: 500; font-size: .9rem; }
 .project h3 { color: var(--text); }
 @media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
+
+/* ===== CV y aprendizaje aplicado ===== */
+.about-text h3 { color: var(--teal); margin: 1.4rem 0 .4rem; }
+.about-text h3:first-child { margin-top: 0; }
+.cv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; }
+.cv-card h3 { color: var(--text); margin-bottom: .2rem; }
+.cv-card .meta { color: var(--teal); font-size: .85rem; font-weight: 600; margin: 0 0 .8rem; }
+.applied, .learned { color: var(--muted); font-size: .92rem; border-left: 3px solid var(--orange); padding-left: .8rem; }
+.cv-card .applied { margin: 0; }
+.project .learned { flex: none; }
+.learned strong { color: var(--text); }
+.cv-actions { margin-top: 2rem; }
