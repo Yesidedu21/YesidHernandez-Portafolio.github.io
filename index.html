@@ -8,6 +8,10 @@
   <meta name="description"
     content="Portafolio de Yesid Hernández, Full Stack Java Developer e Ingeniero de Sistemas." />
 
+  <meta name="theme-color" content="#17202a" />
+  <meta property="og:title" content="Yesid Hernández | Full Stack Java Developer" />
+  <meta property="og:description" content="Aplicaciones web de punta a punta con Java, Spring Boot y MySQL." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -20,7 +24,7 @@
 
 <body>
   <header class="header">
-    <a href="#inicio" class="logo">Yesid Hernandez<span></span></a>
+    <a href="#inicio" class="logo">Yesid Hernández<span>.</span></a>
     <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">
       ☰
     </button>
@@ -37,13 +41,14 @@
     <!-- HERO -->
     <section id="inicio" class="hero container">
       <div class="hero-text">
+        <p class="badge"><span class="dot"></span>Disponible para nuevas oportunidades</p>
         <p class="hello">Hola, soy</p>
         <h1>Yesid Hernández</h1>
         <p class="role">Full Stack Java Developer</p>
         <p class="lead">
-          Ingeniero de Sistemas. Construyo aplicaciones web de punta a punta:
-          APIs con Spring Boot, bases de datos y interfaces claras. Código
-          limpio, poco y legible.
+          Ingeniero de Sistemas especializado en el ecosistema Java. Diseño y desarrollo aplicaciones web de extremo a
+          extremo: APIs REST con Spring Boot, modelos de datos en MySQL e interfaces claras, con una arquitectura por
+          capas y código mantenible.
         </p>
         <div class="actions">
           <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
@@ -81,14 +86,19 @@
             ordenada y la evolución constante de lo que construyo.
           </p>
           <p>
-            Escribe aquí tu historia: dónde trabajaste, qué te motiva y qué
-            tipo de proyectos buscas.
+            Mi trabajo se centra en construir soluciones backend sólidas con Spring Boot, JPA y Spring Security, y en
+            conectarlas con interfaces web funcionales. Me apoyo en patrones como MVC, DTO y servicios para que cada
+            proyecto sea escalable y fácil de mantener.
+          </p>
+          <p>
+            Estoy en búsqueda de oportunidades como desarrollador Full Stack Java, donde pueda aportar desde el primer
+            día y seguir creciendo en entornos de trabajo colaborativos.
           </p>
         </div>
         <ul class="stats">
-          <li><strong>00+</strong><span>Años de experiencia</span></li>
-          <li><strong>03+</strong><span>Proyectos completados</span></li>
-          <li><strong>12+</strong><span>Tecnologías</span></li>
+          <li><strong>Java</strong><span>Stack principal</span></li>
+          <li><strong>03</strong><span>Proyectos en desarrollo</span></li>
+          <li><strong>15+</strong><span>Tecnologías y herramientas</span></li>
         </ul>
       </div>
     </section>
@@ -111,7 +121,11 @@
               <i class="devicon-spring-original colored"></i><span>Spring Boot</span>
             </li>
             <li>
-              <i class="devicon-postman-plain colored"></i><span>REST / Postman</span>
+              <i class="devicon-hibernate-plain colored"></i><span>Hibernate / JPA</span>
+            </li>
+            <li><i class="devicon-maven-plain colored"></i><span>Maven</span>
+            </li>
+            <li><i class="devicon-gradle-plain colored"></i><span>Gradle</span>
             </li>
           </ul>
         </article>
@@ -160,11 +174,27 @@
               <i class="devicon-github-original"></i><span>GitHub</span>
             </li>
             <li>
-              <i class="devicons devicons-intellij-idea"></i><span>IntelliJ Idea</span>
+              <i class="devicon-intellij-plain colored"></i><span>IntelliJ Idea</span>
             </li>
             <li>
               <i class="devicon-vscode-plain colored"></i><span>VS Code</span>
             </li>
+            <li><i class="devicon-postman-plain colored"></i><span>Postman</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="skill-group">
+          <h3>Arquitectura y prácticas</h3>
+          <ul class="tags">
+            <li>API REST</li>
+            <li>MVC</li>
+            <li>Arquitectura por capas</li>
+            <li>POO</li>
+            <li>DTO y Mapper</li>
+            <li>Spring Security</li>
+            <li>Clean Code</li>
+            <li>Control de versiones</li>
           </ul>
         </article>
       </div>
@@ -174,16 +204,16 @@
     <section id="proyectos" class="section container">
       <h2>Proyectos</h2>
       <p class="section-sub">
-        Estos son proyectos que he estado trabajando, busco escalar todos ellos aplicando nuevas tecnologias y buenas
-        practicas.
+        Proyectos orientados a resolver problemas reales, desarrollados con arquitectura por capas y buenas prácticas, y
+        en evolución constante hacia soluciones más escalables.
       </p>
 
       <div class="projects">
         <article class="project">
           <h3>API REST Reserva de Canchas</h3>
           <p>
-            API reactiva con Spring Boot y MySQL. CRUD completo y pensada
-            para escalar, con autenticación, roles y panel administrativo.
+            API REST para la gestión de reservas de canchas deportivas, con operaciones CRUD completas, autenticación,
+            control de acceso por roles y panel administrativo, sobre un modelo relacional en MySQL.
           </p>
           <ul class="tags">
             <li>Java</li>
@@ -193,13 +223,14 @@
             <li>Html5</li>
             <li>Css3</li>
           </ul>
-          <div class="links"><a href="https://github.com/Juensi9Mora/Proyecto-Final-Grupo1.git">Código</a><a
-              href="https://mi-cancha-g1.vercel.app/index.html">Demo</a></div>
+          <div class="links"><a href="\1" target="_blank" rel="noopener">Código</a><a href="\1" target="_blank"
+              rel="noopener">Demo</a></div>
         </article>
         <article class="project">
           <h3>Administrador de Tareas</h3>
           <p>
-            Aplicación web con Spring Boot y MySQL. CRUD completo, autenticación, roles y panel administrativo.
+            Aplicación web para organizar y dar seguimiento a tareas, con CRUD completo, autenticación, gestión de roles
+            y panel administrativo. Backend en Spring Boot y persistencia en MySQL.
           </p>
           <ul class="tags">
             <li>Java</li>
@@ -209,14 +240,14 @@
             <li>Html5</li>
             <li>Css3</li>
           </ul>
-          <div class="links"><a href="https://github.com/Yesidedu21/AdministradorDeTareas.git">Código</a><a
-              href="#">Demo</a></div>
+          <div class="links"><a href="\1" target="_blank" rel="noopener">Código</a><span class="soon">\1
+              próximamente</span></div>
         </article>
         <article class="project">
           <h3>Sistema de Inventarios</h3>
           <p>
-            API web con Spring Boot y MySQL. CRUD completo, autenticación, roles y panel administrativo. Sistema pensado
-            para ser escalable hasta convertirse en Aplicacion Web de ventas.
+            API para el control de inventarios con CRUD completo, autenticación y roles. Su diseño modular permite
+            escalarla hacia una aplicación web de ventas.
           </p>
           <ul class="tags">
             <li>Java</li>
@@ -226,7 +257,7 @@
             <li>Html5</li>
             <li>Css3</li>
           </ul>
-          <div class="links"><a href="#">Código</a><a href="#">Demo</a></div>
+          <div class="links"><span class="soon">\1 próximamente</span><span class="soon">\1 próximamente</span></div>
         </article>
       </div>
     </section>
@@ -242,7 +273,7 @@
         <ul class="contact-info">
           <li>
             Correo:
-            <a href="yesidh464@gmail.com">yesidh464@gmail.com</a>
+            <a href="mailto:yesidh464@gmail.com">yesidh464@gmail.com</a>
           </li>
           <li>
             GitHub:
@@ -250,7 +281,7 @@
           </li>
           <li>
             LinkedIn:
-            <a href="www.linkedin.com/in/yesidhernandezg" target="_blank"
+            <a href="https://www.linkedin.com/in/yesidhernandezg" target="_blank"
               rel="noopener">www.linkedin.com/in/yesidhernandezg
             </a>
           </li>
